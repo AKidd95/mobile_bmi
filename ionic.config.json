@@ -1,6 +1,6 @@
 {
   "name": "bmi_calculator",
-  "app_id": "",
+  "app_id": "38bd8780",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

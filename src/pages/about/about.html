@@ -1,11 +1,26 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-menu [content]="content"></ion-menu>  
+  <ion-header>
+    <ion-toolbar>
+
+    </ion-toolbar>
+    <ion-navbar>
+      <ion-title>
+        About
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
 
 <ion-content padding>
 
-</ion-content>
+    <ion-content>
+        <ion-list>
+          <button ion-item (click)="openPage(calculator)"> 
+            Calculator
+          </button>
+          <button ion-item (click)="closeMenu()">
+            Close Menu
+          </button>
+        </ion-list>
+      </ion-content>
+
+      <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
